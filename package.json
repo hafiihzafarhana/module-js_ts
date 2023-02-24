@@ -5,21 +5,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:user_agent_parser": "nodemon src/user_agent_parser/index.ts"
+    "dev:user_agent_parser": "nodemon src/user_agent_parser/index.ts",
+    "dev:session_management": "nodemon src/session_management/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "express-session": "^1.17.3",
     "nodemon": "^2.0.20",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5",
     "ua-parser-js": "^1.0.33"
   },
   "devDependencies": {
-    "@types/ua-parser-js": "^0.7.36",
     "@types/express": "^4.17.17",
-    "@types/node": "^18.14.1"
+    "@types/express-session": "^1.17.6",
+    "@types/node": "^18.14.1",
+    "@types/ua-parser-js": "^0.7.36"
   }
 }
