@@ -9,6 +9,7 @@ require('./strategies/index')
 
 const app = express()
 
+// session
 app.use(exsession({
     secret: process.env.SESSION_SECRET!,
     resave: false,
